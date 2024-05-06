@@ -1,0 +1,40 @@
+.cheese-list {
+    @apply overflow-hidden my-16;
+
+    .error-message {
+        @apply w-full;
+    }
+    
+    .cheese-cards {
+        @apply grid lg:grid-cols-3 grid-cols-2 gap-5;
+    
+        .cheese-card {
+            @apply rounded-lg border-2 border-brown-coffee  bg-white-champaigne;
+    
+            .image {
+                @apply md:h-[15rem] h-[10rem];
+    
+                img {
+                    @apply object-cover h-full w-full rounded-t-md;
+                }
+            }
+    
+            .inner-content {
+                @apply grid gap-1 p-5 rounded-b-md;
+            }
+        }
+        .calculator {
+            @apply grid gap-2 mt-3;
+
+            label {
+                @apply font-semibold;
+            }
+            input {
+                @apply border-2 px-3 rounded-md;
+            }
+            .error {
+                color: red;
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply md:text-[16px] text-[13px] leading-relaxed;
+}
+
+body {
+    @apply bg-yellow-camembert;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    @apply font-semibold;
+}
+
+h1 {
+    @apply md:text-[4rem] text-[2.5rem] leading-tight mb-3;
+}
+h2 {
+    @apply md:text-[2rem] text-[1.5rem];
+}
+h3 {
+    @apply md:text-[1.5rem] text-[1.2rem];
+}
+
+p, span {
+    a {
+        @apply underline; //inline links should all be underlined where possible
+    }
+}
+
+.page {
+    @apply min-h-[86vh]; //making sure all pages fill out the viewport height nicely even if they are short
+}
+
+.wrapper {
+    @apply flex justify-center md:px-[5rem] px-[1rem];
+}
+
+.container {
+    @apply max-w-[1200px];
+}
+
+//Header
+.site-header {
+    @apply bg-brown-mandarin py-10;
+
+    * {
+        @apply text-white-champaigne;
+    }
+
+    .inner-content {
+        @apply flex flex-wrap gap-5 justify-between items-center relative; 
+
+        .logo {
+            @apply text-[1.5rem] uppercase font-bold;
+        }
+
+        .navigation {
+            @apply flex flex-wrap gap-5 items-center;
+
+            .nav-links {
+                @apply flex flex-wrap gap-5;
+    
+                .nav-link {
+                    @apply underline;
+                }
+            }
+
+            .cta-button {
+                @apply py-2 px-5 rounded-full border-2 border-brown-coffee bg-white-champaigne hover:scale-105 text-brown-coffee font-semibold;
+            }
+        }
+
+        .list-modal {
+            @apply flex flex-col gap-2 bg-[#ffffff] border-2 border-brown-coffee absolute sm:w-[25rem] w-full min-h-[15rem] p-5 md:top-[3.5rem] top-[130%] right-0;
+
+            a {
+                @apply underline;
+            }
+
+            * {
+                @apply text-brown-coffee;
+            }
+
+            .line-item {
+                @apply w-full;
+            }
+        }
+    }
+}
+
+//Footer
+.site-footer {
+    @apply bg-black-raisin py-3;
+    
+    .inner-content {
+        @apply flex justify-between text-white-champaigne;
+
+        a {
+            @apply underline;
+        }
+    }
+}

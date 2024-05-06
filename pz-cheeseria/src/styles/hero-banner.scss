@@ -1,0 +1,7 @@
+.hero-banner {
+    @apply pt-16 items-center;
+
+    .inner-content {
+        @apply lg:pr-[30rem] pr-0;
+    }
+}
