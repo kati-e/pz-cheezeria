@@ -1,6 +1,6 @@
 # My Project for PZ #
 
-This project was made specially for PZ <3 
+This project was made specially for PZ. 
 Hope you like my simple web application example.
 
 The front end I decided to use what I know best which is React with Typescript. For the back end I chose NodeJS - This was actually my first time ever setting up & using a NodeJS backend, so I had to look up documentation along the way, but it was a very fun experience!
